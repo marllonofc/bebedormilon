@@ -65,10 +65,10 @@
             <div className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-400 to-red-500 text-white h-7 flex items-center overflow-hidden shadow">
               <div className="marquee-container font-semibold text-sm">
                 <div className="marquee-text">
-                  🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos 🎁 — Solo US$ 19,90 — Acceso Inmediato 🔥
+                  🚨 ¡Oferta Especial! Solo US$ 19,90 — Manual del Bebé Dormilón + 3 Bonos 🎁 — Acceso Inmediato 🔥
                 </div>
                 <div className="marquee-text">
-                  🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos 🎁 — Solo US$ 19,90 — Acceso Inmediato 🔥
+                  🚨 ¡Oferta Especial! Solo US$ 19,90 — Manual del Bebé Dormilón + 3 Bonos 🎁 — Acceso Inmediato 🔥
                 </div>
               </div>
             </div>
