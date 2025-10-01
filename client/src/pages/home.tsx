@@ -321,14 +321,17 @@
                 </div>
                 
                 <Card className="bg-red-100 border border-red-400 mb-6" data-testid="urgency-banner">
-                  <CardContent className="p-4">
-                    <div className="font-bold text-red-700 mb-2 flex items-center justify-center">
-                      <AlertCircle className="mr-2" />
-                      ¡Promoción válida SOLO por {5} DÍAS!
-                    </div>
-                    <div className="text-red-600">Después, el precio vuelve a US$ 67</div>
-                  </CardContent>
-                </Card>
+  <CardContent className="p-4">
+    <div className="font-bold text-red-700 mb-2 flex items-center justify-center">
+      <AlertCircle className="mr-2" />
+      ¡Promoción válida SOLO por {5} DÍAS!
+    </div>
+    <div className="text-red-600">
+      Después, el precio vuelve a <span className="whitespace-nowrap">US$ 67</span>
+    </div>
+  </CardContent>
+</Card>
+
                 
                 <Button
                   data-testid="button-purchase-final"
