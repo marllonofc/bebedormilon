@@ -252,7 +252,7 @@
                     <div className="bg-soft-pink text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <Gift className="text-2xl" />
                     </div>
-                    <div className="text-red-500 line-through text-lg font-semibold">US$ 27</div>
+                    <div className="text-red-500 line-through text-lg font-semibold">US$ 15</div>
                     <Badge className="bg-green-600 text-white font-bold text-lg">GRATIS</Badge>
                   </div>
                   <h3 className="font-bold text-lg mb-3 text-center">Mini eBook</h3>
@@ -268,7 +268,7 @@
                     <div className="bg-baby-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <Calendar className="text-2xl" />
                     </div>
-                    <div className="text-red-500 line-through text-lg font-semibold">US$ 27</div>
+                    <div className="text-red-500 line-through text-lg font-semibold">US$ 15</div>
                     <Badge className="bg-green-600 text-white font-bold text-lg">GRATIS</Badge>
                   </div>
                   <h3 className="font-bold text-lg mb-3 text-center">Tarjeta Práctica</h3>
@@ -284,7 +284,7 @@
                     <div className="bg-warm-coral text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                       <CheckSquare className="text-2xl" />
                     </div>
-                    <div className="text-red-500 line-through text-lg font-semibold">US$ 27</div>
+                    <div className="text-red-500 line-through text-lg font-semibold">US$ 15</div>
                     <Badge className="bg-green-600 text-white font-bold text-lg">GRATIS</Badge>
                   </div>
                   <h3 className="font-bold text-lg mb-3 text-center"> Checklist</h3>
@@ -296,7 +296,7 @@
             
             <Card className="bg-green-100 border-2 border-green-400 text-center" data-testid="bonus-value">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold text-green-800 mb-2">VALOR TOTAL DE LOS BONOS: US$ 81</h3>
+                <h3 className="text-2xl font-bold text-green-800 mb-2">VALOR TOTAL DE LOS BONOS: US$ 47</h3>
                 <p className="text-green-700 font-semibold">Todos inclusos GRATUITAMENTE na sua compra!</p>
               </CardContent>
             </Card>
