@@ -614,7 +614,7 @@
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
             <h3 className="font-bold text-lg" data-testid="footer-title">RELUNA</h3>
-            <p className="text-gray-400" data-testid="footer-tagline">ransformando noches, fortaleciendo familias</p>
+            <p className="text-gray-400" data-testid="footer-tagline">Transformando noches, fortaleciendo familias</p>
           </div>
           
           <div className="text-gray-400 text-sm space-y-2">
