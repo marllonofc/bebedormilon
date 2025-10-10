@@ -351,8 +351,7 @@
             <Card className="bg-green-600 text-white" data-testid="guarantee-card">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-2 flex items-center justify-center">
-                  <ShieldCheck className="text-yellow-500 mr-2 h-6 w-6" />
-                  GARANTÍA DE 7 DÍAS
+                  <Download className="text-yellow-500 mr-2 h-6 w-6" /> ¡ACCESO INMEDIATO!
                 </h3>
                 <p className="text-center"></p>
               </CardContent>
@@ -587,13 +586,10 @@
                 
                 <div className="text-sm text-gray-600 space-y-2">
                   <div className="flex items-center justify-center">
-                    <Shield className="text-green-600 mr-2 h-4 w-4" />
-                    Garantía de 7 días
-                  </div>
-                  <div className="flex items-center justify-center">
                     <Download className="text-green-600 mr-2 h-4 w-4" />
                     Acceso inmediato
                   </div>
+                
                   <div className="flex items-center justify-center">
                     <Lock className="text-green-600 mr-2 h-4 w-4" />
                     Pago 100% seguro
