@@ -334,12 +334,13 @@
 
                 
                 <Button
-                  data-testid="button-purchase-final"
-                  onClick={() => window.location.href = 'https://estante-virtual6.pay.yampi.com.br/r/4QRC8DIB1O'}
-                  className="pulse-button bg-warm-coral hover:bg-warm-coral/90 text-white font-bold text-lg px-6 py-3 rounded-full w-full mb-4 transition-all whitespace-normal break-words text-center leading-tight"
-                >
-                  🛒 ¡QUIERO MI BEBÉ DORMILÓN AHORA!
-                </Button>
+  data-testid="button-purchase-final"
+  onClick={() => window.location.href = 'https://pay.kiwify.com/EZCnzqT'}
+  className="pulse-button bg-warm-coral hover:bg-warm-coral/90 text-white font-bold text-lg px-6 py-3 rounded-full w-full mb-4 transition-all whitespace-normal break-words text-center leading-tight"
+>
+  🛒 ¡QUIERO MI BEBÉ DORMILÓN AHORA!
+</Button>
+
                 
                 <div className="text-center text-sm text-gray-600 mt-2">
                   Pago 100% seguro
@@ -574,12 +575,13 @@
                 <div className="text-lg mb-4">Manual + 3 Bonos Gratis</div>
                 
                 <Button
-                  onClick={() => window.location.href = 'https://estante-virtual6.pay.yampi.com.br/r/4QRC8DIB1O'}
-                  className="pulse-button bg-warm-coral hover:bg-warm-coral/90 text-white font-bold text-lg px-6 py-3 rounded-full w-full mb-4 transition-all whitespace-normal break-words text-center leading-tight"
-                  data-testid="button-purchase-final"
-                >
-                  🚀 ¡SÍ! ¡QUIERO MI BEBÉ DORMILÓN AHORA!
-                </Button>
+  onClick={() => window.location.href = 'https://pay.kiwify.com/EZCnzqT'}
+  className="pulse-button bg-warm-coral hover:bg-warm-coral/90 text-white font-bold text-lg px-6 py-3 rounded-full w-full mb-4 transition-all whitespace-normal break-words text-center leading-tight"
+  data-testid="button-purchase-final"
+>
+  🚀 ¡SÍ! ¡QUIERO MI BEBÉ DORMILÓN AHORA!
+</Button>
+
 
 
                 
