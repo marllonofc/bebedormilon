@@ -613,7 +613,7 @@
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
-            <h3 className="font-bold text-lg" data-testid="footer-title">Manual del Bebé Dormilón</h3>
+            <h3 className="font-bold text-lg" data-testid="footer-title">RELUNA</h3>
             <p className="text-gray-400" data-testid="footer-tagline">ransformando noches, fortaleciendo familias</p>
           </div>
           
