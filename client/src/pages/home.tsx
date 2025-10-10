@@ -324,7 +324,7 @@
   <CardContent className="p-4">
     <div className="font-bold text-red-700 mb-2 flex items-center justify-center">
       <AlertCircle className="mr-2" />
-      ¡Promoción válida SOLO por {5} DÍAS!
+      ¡Promoción válida SOLO por {2} DÍAS!
     </div>
     <div className="text-red-600">
       Después, el precio vuelve a <span className="whitespace-nowrap">US$ 67</span>
@@ -603,7 +603,7 @@
             </Card>
             
             <div className="text-yellow-300 text-sm" data-testid="final-urgency">
-              ⚠️ OFERTA VÁLIDA SOLO POR {5} DÍAS - ¡NO LA DEJES PASAR!
+              ⚠️ OFERTA VÁLIDA SOLO POR {2} DÍAS - ¡NO LA DEJES PASAR!
             </div>
           </div>
         </div>
