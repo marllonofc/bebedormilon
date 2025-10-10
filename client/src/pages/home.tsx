@@ -618,8 +618,8 @@
           </div>
           
           <div className="text-gray-400 text-sm space-y-2">
-            <p data-testid="footer-copyright">© 2025 Manual del Bebé Dormilón. Todos los derechos reservados.</p>
-            <p data-testid="footer-support">Suporte E-mail: manualdobebedorminhoco@gmail.com</p>
+            <p data-testid="footer-copyright">© 2025 Reluna. Todos los derechos reservados.</p>
+            <p data-testid="footer-support">Suporte E-mail: soyreluna@gmail.com</p>
             <p data-testid="footer-disclaimer">Este producto no sustituye la orientación médica profesional.</p>
           </div>
         </div>
