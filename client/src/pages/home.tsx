@@ -184,7 +184,7 @@
 
             <div className="text-center mb-12">
               <img 
-                src="https://i.ibb.co/KCF0thX/bebe-dormilon.png" 
+                src="https://i.ibb.co/JjmykwXw/imagem-pro-site.png" 
                 alt="Mãe feliz com bebê dormindo" 
                 className="rounded-xl shadow-2xl mx-auto max-w-lg w-full"
                 data-testid="solution-image"
