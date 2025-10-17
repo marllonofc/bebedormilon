@@ -307,22 +307,22 @@ export default function Home() {
               {
                 img: 'https://i.ibb.co/h1RxN1J0/Whats-App-Image-2025-09-27-at-00-31-56-2.jpg',
                 text: 'En solo 10 días mi hija de 8 meses empezó a dormir toda la noche. Ahora despierto descansada y soy una mamá más paciente.',
-                name: 'Lucía Gómez – Barcelona, España'
+                name: 'Valentina Rojas – Santiago, Chile'
               },
               {
                 img: 'https://i.ibb.co/s9tDt5Hz/Whats-App-Image-2025-09-27-at-00-31-56-1.jpg',
                 text: '¡Estaba desesperada! En 2 semanas mi bebé ya dormía en su cuna solo. Salvó mi matrimonio.',
-                name: 'Camila Sánchez – Bilbao, España'
+                name: 'Camila Torres – Bogotá, Colômbia'
               },
               {
                 img: 'https://i.ibb.co/7mMr4WS/Whats-App-Image-2025-09-27-at-00-31-55.jpg',
                 text: 'Probé de todo y nada funcionaba. Este manual fue diferente: práctico y eficaz. ¡Mi bebé duerme 12 horas seguidas!',
-                name: 'Alejandra Morales – Sevilla, España'
+                name: 'Julieta Ramírez – Rosario, Argentina'
               },
               {
                 img: 'https://i.ibb.co/Y7xPcM2v/Whats-App-Image-2025-09-27-at-00-31-56.jpg',
                 text: 'Como pediatra, recomiendo este manual a las mamás. Basado en ciencia y respetuoso.',
-                name: 'Dra. María Fernández – Madrid, España'
+                name: 'Dra. Emma Paredes – Cusco, Peru'
               }
             ].map((t, i) => (
               <Card key={i} className="p-4 shadow">
