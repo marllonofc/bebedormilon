@@ -75,7 +75,7 @@ export default function Home() {
             </h1>
             <p className="mt-2 text-lg text-white/95">
               14 Pasos Probados para Recuperar Tus Noches y Tu Energía -
-              <span className="text-[#FF4D4D] font-bold"> Resultados en 15 Días!</span>
+              <span className="text-[#FF4D4D] font-bold"> ¡Resultados en 15 Días!</span>
             </p>
             <div className="mt-4 flex flex-col sm:flex-row items-center gap-3">
 
@@ -83,7 +83,7 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-rose-500 hover:bg-rose-600 text-white font-bold px-5 py-3 rounded-full shadow-lg pulse-cta"
               >
-                🌙 Sí, quiero dormir toda la noche
+                🌙 ¡Sí, quiero dormir toda la noche!
               </Button>
 
 
@@ -96,7 +96,7 @@ export default function Home() {
 
               <div className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full">
                 <Download className="h-5 w-5 text-yellow-300" />
-                <div className="text-sm">Acceso inmediato</div>
+                <div className="text-sm">Acceso Inmediato</div>
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
-                🛒 Sí, quiero el manual ahora
+                🛒 ¡Sí, quiero el manual ahora!
               </Button>
 
 
@@ -409,11 +409,11 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
-                🚀 Sí, lo quiero ahora
+                🚀 ¡Sí, lo quiero ahora!
               </Button>
 
 
-              <div className="mt-3 text-sm text-gray-600">🔒 Pago seguro  • Acceso inmediato</div>
+              <div className="mt-3 text-sm text-gray-600">🔒 Pago Seguro</div>
             </CardContent>
           </Card>
 
