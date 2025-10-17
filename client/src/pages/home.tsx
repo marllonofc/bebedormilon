@@ -288,7 +288,7 @@ export default function Home() {
               </Button>
 
 
-              <div className="mt-3 text-sm text-gray-600">🔒 Pago 100% Seguro • Acceso Inmediato</div>
+              <div className="mt-3 text-sm text-gray-600">🔒 Pago 100% Seguro • Acceso Vitalicio</div>
             </CardContent>
           </Card>
 
@@ -413,7 +413,7 @@ export default function Home() {
               </Button>
 
 
-              <div className="mt-3 text-sm text-gray-600">🔒 Pago Seguro</div>
+              <div className="mt-3 text-sm text-gray-600">🔒 Pago 100% Seguro • Acceso Vitalicio</div>
             </CardContent>
           </Card>
 
