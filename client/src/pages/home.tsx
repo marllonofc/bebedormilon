@@ -83,7 +83,7 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-rose-500 hover:bg-rose-600 text-white font-bold px-5 py-3 rounded-full shadow-lg pulse-cta"
               >
-                🌙 ¡Sí, quiero dormir toda la noche!
+                🌙 ¡Sí, Quiero Dormir Toda La Noche!
               </Button>
 
 
@@ -284,7 +284,7 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
-                🛒 ¡Sí, quiero el manual ahora!
+                🛒 ¡Sí, Quiero El Manual Ahora!
               </Button>
 
 
@@ -404,12 +404,12 @@ export default function Home() {
           <Card className="bg-white text-navy rounded-2xl p-6 mb-4">
             <CardContent>
               <div className="text-3xl font-bold text-green-600 mb-2">US$ 19,90</div>
-              <div className="mb-4">Manual + 3 bonos gratis • Acceso inmediato</div>
+              <div className="mb-4">Manual + 3 bonos gratis • Acceso Inmediato</div>
               <Button
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
-                🚀 ¡Sí, lo quiero ahora!
+                🚀 ¡Sí, Lo Quiero Ahora!
               </Button>
 
 
