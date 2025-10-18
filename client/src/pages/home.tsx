@@ -278,7 +278,7 @@ export default function Home() {
 
               <div className="bg-rose-50 border border-rose-200 rounded-lg p-3 mb-4">
                 <div className="font-semibold text-rose-600">⏰ Oferta termina en: {formatTime(timeLeftSec)}</div>
-                <div className="text-sm text-rose-600">Después, el precio vuelve a US$67</div>
+                <div className="text-sm text-rose-600">Luego el precio sube a US$67</div>
               </div>
 
               <Button
