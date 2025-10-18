@@ -71,11 +71,11 @@ export default function Home() {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow">
-              🌙 Manual del <span className="text-[#C084FC]">Bebé Dormilón</span>
+              🌙 Manual del <span className="text-[#A855F7]">Bebé Dormilón</span>
             </h1>
             <p className="mt-2 text-lg text-white/95">
               14 Pasos Probados para Recuperar Tus Noches y Tu Energía -
-              <span className="text-[#FF4D4D] font-bold"> ¡Resultados en 15 Días!</span>
+              <span className="text-[#FF1A1A] font-bold"> ¡Resultados en 15 Días!</span>
             </p>
             <div className="mt-4 flex flex-col sm:flex-row items-center gap-3">
 
