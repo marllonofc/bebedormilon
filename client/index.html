@@ -15,54 +15,55 @@
     />
 
     <!-- ✅ Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
+<script>
+  !(function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod
+        ? n.callMethod.apply(n, arguments)
+        : n.queue.push(arguments);
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = "2.0";
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s);
+  })(
+    window,
+    document,
+    "script",
+    "https://connect.facebook.net/en_US/fbevents.js"
+  );
 
-      // ✅ Pixel ID Atualizado
-      window.addEventListener("load", function () {
-        if (typeof fbq === "function") {
-          fbq("init", "1485206809451869");
-          fbq("track", "PageView");
-          fbq("track", "ViewContent");
-        }
-      });
-    </script>
+  // Aguarda carregamento do fbq
+  window.addEventListener("load", function () {
+    if (typeof fbq === "function") {
+      fbq("init", "1318395689488268");
+      fbq("track", "PageView");
+      fbq("track", "ViewContent");
+    }
+  });
+</script>
     <!-- ✅ End Meta Pixel Code -->
+    <script type="module" crossorigin src="/assets/index-KBq05WXl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CNYp8xRC.css">
   </head>
 
   <body>
     <div id="root"></div>
 
     <!-- ✅ NoScript precisa ficar dentro do body -->
-    <!-- 🔁 Pixel ID Atualizado -->
     <noscript>
       <img
         height="1"
         width="1"
         style="display:none"
-        src="https://www.facebook.com/tr?id=1485206809451869&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=1318395689488268&ev=PageView&noscript=1"
       />
     </noscript>
 
@@ -85,7 +86,6 @@
       });
     </script>
 
-    <script type="module" src="/src/main.tsx"></script>
     <script
       type="text/javascript"
       src="https://replit.com/public/js/replit-dev-banner.js"
