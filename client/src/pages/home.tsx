@@ -61,8 +61,8 @@ export default function Home() {
       {/* LETREIRO */}
       <div className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-400 to-red-500 text-white h-8 flex items-center overflow-hidden shadow-md">
         <div className="marquee-container font-semibold text-sm px-4">
-          <div className="marquee-text">🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 19,90 — Acceso Inmediato 🔥</div>
-          <div className="marquee-text">🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 19,90 — Acceso Inmediato 🔥</div>
+          <div className="marquee-text">🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 14,90 — Acceso Inmediato 🔥</div>
+          <div className="marquee-text">🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 14,90 — Acceso Inmediato 🔥</div>
         </div>
       </div>
 
@@ -272,7 +272,7 @@ export default function Home() {
             <CardContent>
               <div className="mb-4">
                 <div className="text-sm line-through text-rose-500">De US$ 67</div>
-                <div className="text-4xl md:text-5xl font-extrabold text-green-600">US$ 19,90</div>
+                <div className="text-4xl md:text-5xl font-extrabold text-green-600">US$ 14,90</div>
                 <div className="text-sm text-gray-600 mt-1">Acceso Inmediato + 3 Bonos Gratis</div>
               </div>
 
@@ -405,7 +405,7 @@ export default function Home() {
 
           <Card className="bg-white text-navy rounded-2xl p-6 mb-4">
             <CardContent>
-              <div className="text-3xl font-bold text-green-600 mb-2">US$ 19,90</div>
+              <div className="text-3xl font-bold text-green-600 mb-2">US$ 14,90</div>
               <div className="mb-4">Manual + 3 bonos gratis • Acceso inmediato</div>
               <div className="mb-4">Manual + 3 bonos gratis • Acceso Inmediato</div>
               <Button
