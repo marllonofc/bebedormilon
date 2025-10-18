@@ -266,7 +266,7 @@ export default function Home() {
       {/* PRICING / URGENCY */}
       <section className="py-12 bg-gradient-to-r from-blue-900 to-pink-300 text-white">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">😱 Oferta Especial por Tiempo Limitado</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">😱 ¡Oferta Especial de Lanzamiento por Tiempo Limitado!</h2>
 
           <Card className="bg-white text-navy rounded-2xl shadow-2xl p-6 mb-6">
             <CardContent>
