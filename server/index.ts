@@ -1,73 +1,71 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+import express, { type Request, Response, NextFunction } from "express";
+import { registerRoutes } from "./routes";
+import { setupVite, serveStatic, log } from "./vite";
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-    <!-- ✅ Meta Pixel Code -->
-    <script>
-      !(function(f,b,e,v,n,t,s){
-        if(f.fbq) return;
-        n=f.fbq=function(){
-          n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments);
-        };
-        if(!f._fbq) f._fbq=n;
-        n.push=n;
-        n.loaded=!0;
-        n.version="2.0";
-        n.queue=[];
-        t=b.createElement(e);
-        t.async=!0;
-        t.src=v;
-        s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s);
-      })(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+app.use((req, res, next) => {
+  const start = Date.now();
+  const path = req.path;
+  let capturedJsonResponse: Record<string, any> | undefined = undefined;
 
-      window.addEventListener("load", function(){
-        if(typeof fbq==="function"){
-          fbq("init","1318395689488268");
-          fbq("track","PageView");
-          fbq("track","ViewContent");
-        }
-      });
-    </script>
-    <!-- ✅ End Meta Pixel Code -->
+  const originalResJson = res.json;
+  res.json = function (bodyJson, ...args) {
+    capturedJsonResponse = bodyJson;
+    return originalResJson.apply(res, [bodyJson, ...args]);
+  };
 
-    <!-- ✅ Importa o entrypoint do Vite corretamente -->
-    <script type="module" src="/src/main.tsx"></script>
-  </head>
+  res.on("finish", () => {
+    const duration = Date.now() - start;
+    if (path.startsWith("/api")) {
+      let logLine = `${req.method} ${path} ${res.statusCode} in ${duration}ms`;
+      if (capturedJsonResponse) {
+        logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
+      }
 
-  <body>
-    <div id="root"></div>
+      if (logLine.length > 80) {
+        logLine = logLine.slice(0, 79) + "…";
+      }
 
-    <!-- ✅ NoScript dentro do body -->
-    <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1485206809451869&ev=PageView&noscript=1" />
-    </noscript>
+      log(logLine);
+    }
+  });
 
-    <!-- ✅ Rastreamento de clique no botão -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function(){
-        const checkoutButton = document.querySelector(".botao-comprar");
-        if(checkoutButton){
-          checkoutButton.addEventListener("click", function(){
-            if(typeof fbq==="function"){
-              fbq("track","InitiateCheckout",{
-                value:19.9,
-                currency:"USD",
-                contents:[{id:"produto-principal",quantity:1,item_price:19.9}],
-                content_type:"product"
-              });
-            }
-          });
-        }
-      });
-    </script>
+  next();
+});
 
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
-</html>
+(async () => {
+  const server = await registerRoutes(app);
+
+  app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
+    const status = err.status || err.statusCode || 500;
+    const message = err.message || "Internal Server Error";
+
+    res.status(status).json({ message });
+    throw err;
+  });
+
+  // importantly only setup vite in development and after
+  // setting up all the other routes so the catch-all route
+  // doesn't interfere with the other routes
+  if (app.get("env") === "development") {
+    await setupVite(app, server);
+  } else {
+    serveStatic(app);
+  }
+
+  // ALWAYS serve the app on the port specified in the environment variable PORT
+  // Other ports are firewalled. Default to 5000 if not specified.
+  // this serves both the API and the client.
+  // It is the only port that is not firewalled.
+  const port = parseInt(process.env.PORT || '5000', 10);
+  server.listen({
+    port,
+    host: "0.0.0.0",
+    reusePort: true,
+  }, () => {
+    log(`serving on port ${port}`);
+  });
+})();
