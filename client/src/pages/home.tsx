@@ -61,8 +61,8 @@ export default function Home() {
       {/* LETREIRO */}
       <div className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-yellow-400 to-red-500 text-white h-8 flex items-center overflow-hidden shadow-md">
         <div className="marquee-container font-semibold text-sm px-4">
-          <div className="marquee-text">🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 14,90 — Acceso Inmediato 🔥</div>
-          <div className="marquee-text">🚨 ¡Oferta Especial! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 14,90 — Acceso Inmediato 🔥</div>
+          <div className="marquee-text">🚨 ¡Oferta Especial de Lanzamiento! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 14,90 — Acceso Inmediato 🔥</div>
+          <div className="marquee-text">🚨 ¡Oferta Especial de Lanzamiento! Manual del Bebé Dormilón + 3 Bonos — Solo US$ 14,90 — Acceso Inmediato 🔥</div>
         </div>
       </div>
 
@@ -83,8 +83,8 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-rose-500 hover:bg-rose-600 text-white font-bold px-5 py-3 rounded-full shadow-lg pulse-cta"
               >
-                🌙 ¡Sí, quiero dormir toda la noche!
-                🌙 ¡Sí, Quiero Dormir Toda La Noche!
+                🌙 💤 ¡Sí, Quiero Que Mi Bebé Duerma Solo!
+                
               </Button>
 
 
@@ -286,7 +286,7 @@ export default function Home() {
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
                 🛒 ¡Sí, quiero el manual ahora!
-                🛒 ¡Sí, Quiero El Manual Ahora!
+               
               </Button>
 
 
@@ -294,7 +294,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <div className="text-sm text-white/90">Compra hoy mismo con descuento, aprovecha esta oportunidad.
+          <div className="text-sm text-white/90">Aprovecha esta oportunidad antes de que termine ⏰, aprovecha esta oportunidad.
 </div>
         </div>
       </section>
@@ -407,13 +407,13 @@ export default function Home() {
             <CardContent>
               <div className="text-3xl font-bold text-green-600 mb-2">US$ 14,90</div>
               <div className="mb-4">Manual + 3 bonos gratis • Acceso inmediato</div>
-              <div className="mb-4">Manual + 3 bonos gratis • Acceso Inmediato</div>
+          
               <Button
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
                 🚀 ¡Sí, lo quiero ahora!
-                🚀 ¡Sí, Lo Quiero Ahora!
+        
               </Button>
 
 
