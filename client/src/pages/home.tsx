@@ -285,7 +285,7 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
-                🛒 ¡Sí, quiero el manual ahora!
+                🛒 ¡Sí, Quiero el Manual Ahora!
                
               </Button>
 
@@ -412,7 +412,7 @@ export default function Home() {
                 onClick={() => window.open(purchaseUrl, "_blank")}
                 className="bg-amber-400 hover:bg-amber-500 text-navy font-bold px-6 py-3 rounded-full w-full"
               >
-                🚀 ¡Sí, lo quiero ahora!
+                🚀 ¡Sí, lo Quiero Qhora!
         
               </Button>
 
