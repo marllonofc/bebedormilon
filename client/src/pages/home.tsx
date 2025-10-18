@@ -294,7 +294,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <div className="text-sm text-white/90">Aprovecha esta oportunidad antes de que termine ⏰, aprovecha esta oportunidad.
+          <div className="text-sm text-white/90">Aprovecha esta oportunidad antes de que termine ⏰
 </div>
         </div>
       </section>
